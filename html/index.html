@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="..//style/style.css">
+   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" type="text/css">
+   <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,300&family=Marck+Script&family=Playfair+Display+SC&family=Syncopate&family=Zilla+Slab:ital@1&display=swap"rel="stylesheet"type="text/css">
+  <title>Survey Form</title>
+</head>
+<body>
+<header>
+<h1 id="title"> Survey Form</h1>  
+<p id="description">
+Thank you for taking the time to help us improve the platform</p>
+</header>
+<form id="survey-form"> 
+  <div id=block>
+  <label id="name-label" for="Name">Name</label>
+  <input id="name" class="form_group" placeholder="Enter your Name"type="text" required>
+  </div>
+  <div id=block>
+  <label id="email-label" for="email">Email</label>
+  <input id="email" type="email" class="form_group" placeholder="Enter your Email" type="text" required>
+  </div>
+  <div id=block>
+  <label id="number-label" for="number">Age
+  (optional)</label>
+  <input id="number" type="number" min="10" max="100"class="form_group"placeholder="Enter your age" type="text" required>
+  </div>
+  <div id="block">
+  <p id="dropdown-label">Which option best describes your current role?</p>
+  <select id="dropdown" 
+  name="role" class="form_group" required>
+  <option disabled   selected value>Select current role</option>
+  <option>Student</option>
+  <option>Worker</option>
+  <option>Householder</option>
+  <option>Pensioner</option>
+  </select>
+  </div>
+  
+  <div id="dropdown-label">Would you recommend my site to a friend?</div>
+  <div class="form_radio">
+  <input id="Definitely" name="ident" type="radio" value="1" class="input-label" checked>
+  <label for="Definitely">Definitely</label></div>
+  <div class="form_radio">
+  <input id="Maybe" name="ident" type="radio" value="2"  class="input-label">
+  <label for="Maybe">Maybe</label></div>
+  <div class="form_radio">
+  <input id="Not sure" name="ident" type="radio" value="3"  class="input-label">
+  <label for="Not sure">Not sure</label></div>
+  
+  <p id="dropdown-label">What do you like to learn?</p>
+  <div class="form_checkbox">
+  <input id="front" name="check" type="checkbox" value="1" class="input_checkbox">
+  <label for="front">Front-end</label>
+  </div> 
+  <div class="form_checkbox">
+    <input id="Back" name="check" type="checkbox" value="2" class="input_checkbox">
+    <label for="Back">Back-end</label>
+    </div> 
+    <div class="form_checkbox">
+      <input id="web" name="check" type="checkbox" value="3" class="input_checkbox">
+      <label for="web">Web-disain</label>
+      </div> 
+      <div class="form_checkbox">
+        <input id="source" name="check" type="checkbox" value="4" class="input_checkbox">
+        <label for="source">Open Source Community</label>
+        </div> 
+        <div class="form_checkbox">
+          <input id="dop" name="check" type="checkbox" value="5" class="input_checkbox">
+          <label for="dop">Additional Courses</label>
+          </div> 
+  
+        <p      id="dropdown-label">Any comments or suggestions?</p>
+        <textarea name="comments" class="input_texarea" placeholder="Enter your comment here..."></textarea>
+          <div>
+          <button id="submit" type="submit" name="submit" class="input_submit" value="Submit">Submit</button>
+          <br>
+            
+          </div>
+  </form>
+
+  </body>
+<footer style="font-size:15px ;">
+  Copiright MironDima
+</footer>
+</html>
